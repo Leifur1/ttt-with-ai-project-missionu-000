@@ -5,9 +5,9 @@ require_relative '../config/environment'
 
 puts "Welcome to Tic Tac Toe!"
 puts "Would you like to play a Computer or Human?"
-@@type_1 = gets.strip
+@type_1 = gets.strip
 puts "Will this #{type_1} be tacing a Computer or Human?"
-@@type_2 = gets.strip
+@type_2 = gets.strip
 game = Game.new
 until game.won?
   game.play
