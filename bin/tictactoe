@@ -19,6 +19,10 @@ def start
       Game.new(Players::Human.new("X"), Players::Human.new("O")).play
       puts "That was fun! Would you like to play again?"
       loop_around
+    when "wargames"
+      Game.new(Player::Computer.new("X"), Player::Computer.new("O"), Board.new, true).wargames
+      puts "That was fun! Would you like to play again?"
+      loop_around
     else
       puts "That is an invalid entry"
       start
