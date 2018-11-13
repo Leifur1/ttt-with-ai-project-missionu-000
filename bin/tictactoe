@@ -23,7 +23,8 @@ case input
   else
     puts "That is an invalid entry"
     start
-  end 
+  end
+end
 
 play_again = ""
 until play_again.downcase == "n" || play_again.downcase == "no"
