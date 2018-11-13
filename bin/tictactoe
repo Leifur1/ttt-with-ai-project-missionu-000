@@ -23,8 +23,7 @@ case input
   else
     puts "That is an invalid entry"
     start
-end
-end
+  end 
 
 play_again = ""
 until play_again.downcase == "n" || play_again.downcase == "no"
@@ -35,5 +34,3 @@ game = Game.new
 until game.won?
   game.play
 end
-
-
