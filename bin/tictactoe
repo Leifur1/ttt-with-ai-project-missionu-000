@@ -23,7 +23,6 @@ case input
   else
     puts "That is an invalid entry"
     start
-  end
 end
 
 play_again = ""
